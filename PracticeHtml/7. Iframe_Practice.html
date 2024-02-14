@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Iframe Practice</title>
+</head>
+<body>
+
+<!--name & Target Atrribute -->
+
+<a href="ImageTag_practice.html" target="link_to_a">Click for pic</a> <br><br>
+
+<iframe width="400" height="300" name="link_to_a"></iframe ><br><br>
+
+
+<!--src, width, height & srcdoc attribute-->
+
+<iframe src ="ImageTag_practice.html"width="400" height="300"></iframe>
+
+<iframe srcdoc="Nature pic with background blue" width="400" height="100"></iframe>
+
+<hr>
+------------------------------------------------------------------------------------------------------------
+<hr>
+
+<h3>Sandbox and its restrictions</h3>
+<!--Sandbox and its restrictions-->
+
+<!--1. Allow links to work-->
+<iframe src="Links_practice.html" width="400" height="300" 
+sandbox="allow-same-origin"></iframe>
+<br><br>
+
+<!--2. Allow Javascript to work-->
+<iframe src="Iframe_Practice_Javascript_Restriction.html" width="400" height="300" sandbox="allow-scripts"></iframe>
+<br><br>
+
+<!--3. Allow form to work-->
+<iframe src="FormTag_Practice.html" width="400" height="300" sandbox="allow-form"></iframe>
+<br><br>
+
+<!--4. Allow top navigation to work-->
+<iframe src="Links_practice.html" width="400" height="300" sandbox="allow-same-origin-allow-top-navigation"></iframe>
+<br><br>
+
+<!--5. Allow form to work-->
+<iframe src="Links_practice.html" width="400" height="300" sandbox="allow-same-origin-allow-popups"></iframe>
+
+
+
+
+</body>
+</html>

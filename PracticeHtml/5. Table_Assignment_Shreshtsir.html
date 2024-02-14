@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Table Assignment by Shreshtsir</title>
+    <style>
+        table,tr,td{
+            border: 1px solid black;
+            border-spacing: 0px;
+        }
+        td{
+            text-align: center;
+        }
+        
+    </style>
+</head>
+<body>
+    
+    <table>
+    
+    <!--Row 1-->
+        <tr>
+            <td>A</td>
+            <td>B</td>
+            <td colspan="2" rowspan="2">C</td>
+        </tr>
+
+    <!--Row 2-->
+    <tr>
+        <td colspan="2">D</td>
+    </tr>
+
+    <!--Row 3-->
+    <tr>
+        <td colspan="4">E</td>
+    </tr>
+
+    <!--Row 4-->
+    <tr>
+
+        <td colspan="2" rowspan="4">
+            <table>
+                <caption>Table</caption>
+                
+                <tr>
+                   <td>F</td>
+                   <td>G</td>
+                </tr>
+
+                <tr>
+                    <td>H</td>
+                    <td>I</td>
+                </tr>
+            </table>
+        </td>
+
+        <td colspan="2" rowspan="2">&nbsp;&nbsp;&nbsp;J&nbsp;&nbsp;&nbsp;&nbsp;</td>
+
+    </tr>
+
+    <!--Row 5-->
+    <tr>
+        <!--<td>&nbsp;</td>
+        <td></td>
+        <td></td>-->
+    </tr>
+
+    <!--Row 6-->
+    <tr>
+        <td colspan="2" rowspan="2">K</td>
+    </tr>
+
+    <!--Row 7-->
+    <tr>
+        <!--<td>&nbsp;</td>
+        <td></td>
+        <td></td>-->
+    </tr>
+
+    </table>
+
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>All About Html iframe</title>
+</head>
+<body>
+	<h2>Html iframe</h2>
+
+<!--BASIC STRUCTURE WITH SRC,HEIGHT AND WIDTH TAG-->
+
+<!--RELATIVE PATH-->
+    <iframe src="Me(1)BasicStructureOfHtml.html" height="500" width="500"></iframe>
+    <br><br>
+
+<!--ABSOLUTE PATH-->
+    <iframe src="https://www.google.com" height="500" width="500"></iframe>
+    <br><br>
+
+<!--NAME TAG-->
+    <a href="Me(1)BasicStructureOfHtml.html" title="click me" target="page1">click for basic html output</a>
+    <br>
+    <iframe name="page1" srcdoc="click above link to see page1 output" sandbox ></iframe>
+    <br><br>
+
+
+<!--SANDBOX(LINK RESTRICTION)-->
+    <iframe src="Me(1)BasicStructureOfHtml.html" height="500" width="500" sandbox="allow-same-origin"></iframe>
+    <br><br>
+
+<!--SANDBOX(SCRIPT RESTRICTION)-->
+    <iframe src="Husainsir(7)iframe_javascript.html" sandbox="allow-scripts"></iframe>
+    <br><br>
+
+<!--SANDBOX(FORM RESTRICTION):-NOT WORK HERE , IT WORK IN PHP-->
+
+<!--SANDBOX(TOP-NAVIGATION RESTRICTION)-->
+   <!-- <iframe src="Husainsir(7)iframe_gallery.html" sandbox="allow-same-origin allow-top-navigation"></iframe>
+    <br><br>-->
+
+<!--SANDBOX(NEW TAB  RESTRICTION)-->
+    <iframe src="Husainsir(7)iframe_gallery.html" sandbox="allow-same-origin allow-top-navigation
+    allow-popups"></iframe>
+
+</body>
+</html>

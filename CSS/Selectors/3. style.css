@@ -1,0 +1,21 @@
+article p{
+    color: red;
+}
+
+article>p{
+    color: green;
+}
+article>main>p{
+    color: darkblue;
+}
+
+
+
+article+p{
+    color: red;
+
+}
+
+article~div{
+    color: green;
+}

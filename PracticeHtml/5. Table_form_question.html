@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Table with form question</title>
+    <style>
+      table,
+      th,
+      td {
+        border: 1px solid green;
+        border-spacing: 0px;
+      }
+      td {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <form>
+      <table>
+        <caption>
+          <strong>Login Form</strong>
+        </caption>
+        <tr>
+          <td>Name:</td>
+          <td><input type="text" name="name" /></td>
+        </tr>
+
+        <tr>
+          <td>Email:</td>
+          <td><input type="email" name="email" /></td>
+        </tr>
+
+        <tr>
+          <td colspan="2">
+            <button type="submit" name="submit">Submit</button>
+          </td>
+        </tr>
+      </table>
+    </form>
+  </body>
+</html>

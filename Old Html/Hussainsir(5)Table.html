@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<head><title>Html Tables By Hussain Sir</title>
+<style type="text/css">
+	th,td{
+		border: 1px solid green;
+		border-spacing: 0px;
+	}
+</style>
+</head>
+<body>
+	<table>
+		<caption><strong>This is a table </strong></caption>
+		<thead>
+			<tr>
+			<!--<td>Sr no.</td>
+			<td>Item</td>
+			<td>Rate</td>-->
+
+			<!--WE use th instead of td for making bold the first row-->
+
+			<th>Sr no.</th>
+			<th>Item</th>
+			<th>Rate</th>
+
+        
+		    </tr>
+		</thead>
+		<tbody>
+		<tr>
+			<td>1.</td>
+			<td>Mobile</td>
+			<td rowspan="2">8,000</td>
+		</tr>
+		<tr>
+			<td>2.</td>
+			<td>Charger</td>
+			<!--To span with Mobile Rate
+		    <td>0</td>
+			-->
+		</tr>
+		<tr>
+			<td>3.</td>
+			<td>Laptop</td>
+			<td>20,000</td>
+		</tr>
+	</tbody>
+	<tfoot>
+		<tr>
+		<!--
+			<td colspan="2">Grand Total</td>
+		    <td >Grand Total</td>
+			<td>28,000</td>
+	    -->
+        
+        <!--ANother WAy-->
+
+		<!--
+		    <td colspan="2">Grand Total</td>
+		-->
+		    <td colspan="2" >Grand Total</td>
+			<td>28,000</td>
+
+
+		</tr>
+	</tfoot>
+
+
+
+
+	</table>
+</body>
+</html> 
