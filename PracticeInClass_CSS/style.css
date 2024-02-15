@@ -1,0 +1,8 @@
+section>div>:first-child+span{
+    color:rgb(79, 232, 79);
+}
+
+
+section>article>p{
+    color: blue;
+}
