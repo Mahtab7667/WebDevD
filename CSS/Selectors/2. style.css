@@ -1,17 +1,21 @@
-*{
+article p{
+    color: red;
+}
+
+article>p{
     color: green;
 }
-
-p{
-    color: pink;
+article>main>p{
+    color: darkblue;
 }
 
-.one{
-      color: red;
-      font-size: 50px!important;
+
+
+article+p{
+    color: red;
+
 }
 
-#two{
-    color: blue;
-    font-size: 10px;
-} 
+article~div{
+    color: green;
+}

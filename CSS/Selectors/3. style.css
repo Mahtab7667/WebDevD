@@ -1,21 +1,57 @@
-article p{
-    color: red;
+body{
+    background: gray;
 }
 
-article>p{
-    color: green;
-}
-article>main>p{
-    color: darkblue;
-}
+/* PseudoClassSlector(:) */
 
-
-
-article+p{
-    color: red;
-
+/* 1. :first-chilld  */
+article>:first-child{
+    color:red;
 }
 
-article~div{
-    color: green;
+/* 2. :last-child */
+article>:last-child{
+    background-color: rgb(196, 18, 18);
+
+}
+
+/* 3. :nth-child(position of child tag or simply write even tp target even number tag or odd for odd number tag) */
+article>:nth-child(3){
+    color: darkgreen;
+}
+
+/* 4. :link (to change not visited state colour of a link) */
+a:link{
+   color: yellow;
+}
+
+/* 5. :active (to change active state colour of a link) */
+a:active{
+    color: magenta;
+}
+
+/* 6. :Visited (to change Visited state colour of a link) */
+a:visited{
+    color: rgb(183, 255, 0);
+}
+
+/* 7. :hover(to apply property when cursor placed on content) */
+a:hover{
+    border: 2px solid white;
+    border-radius: 5px;
+    background-color: blue;
+}
+
+h4:hover{
+    color: magenta;
+}
+
+section>span:hover+p{ /*or section>span:hover~p*/
+    color: salmon;
+}
+
+/* 8. :focus ( to change the proprty when we tap on any input field in the form) */
+input:focus{
+    outline: none;
+    background-color:greenyellow;
 }

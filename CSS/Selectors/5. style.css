@@ -1,0 +1,45 @@
+/* 1. ::first-letter--> */
+p::first-letter{
+    font-size: 50px;
+    color: magenta;
+}
+
+/* 2. ::first-line--> */
+p::first-line{
+    color: red;
+}
+
+/* 3. ::selection--> */
+section::selection{
+    background-color: green;
+}
+/* or  */
+*::selection{
+    background-color: yellowgreen;
+}
+
+/* 4. ::marker (specially for list to make default bullets into emojis)--> */
+/* ul>li::marker{
+    content: '👍';
+} */
+/* or  */
+
+ul>:nth-child(even)::marker{
+    content:'👌';
+}
+
+ul>:nth-child(odd)::marker{
+    content:'😒';
+}
+
+/* 5. ::before  */
+section::before{
+    content: 'Hello ';
+    color: orange;
+}
+
+/* 6. ::after  */
+section::after{
+    content: ' ,How are you?';
+    color: rgb(0, 255, 17);
+}

@@ -1,0 +1,17 @@
+*{
+    color: green;
+}
+
+p{
+    color: pink;
+}
+
+.one{
+      color: red;
+      font-size: 50px!important;
+}
+
+#two{
+    color:magenta;
+    font-size: 10px;
+} 

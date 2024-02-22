@@ -1,57 +1,43 @@
-body{
-    background: gray;
+/* 1. first attribute selector */
+/* div[title]{
+    color: red;
+} */
+
+/* 2. Attribute selector */
+div[title="div1"]{
+    color: blue;
 }
 
-/* PseudoClassSlector(:) */
-
-/* 1. :first-chilld  */
-article>:first-child{
-    color:red;
-}
-
-/* 2. :last-child */
-article>:last-child{
-    background-color: rgb(196, 18, 18);
-
-}
-
-/* 3. :nth-child(position of child tag or simply write even tp target even number tag or odd for odd number tag) */
-article>:nth-child(3){
-    color: darkgreen;
-}
-
-/* 4. :link (to change not visited state colour of a link) */
-a:link{
-   color: yellow;
-}
-
-/* 5. :active (to change active state colour of a link) */
-a:active{
+/* 2nd type attribute selector  another example with class single value */
+div[class="block1"]{
     color: magenta;
 }
 
-/* 6. :Visited (to change Visited state colour of a link) */
-a:visited{
-    color: rgb(183, 255, 0);
-}
-
-/* 7. :hover(to apply property when cursor placed on content) */
-a:hover{
-    border: 2px solid white;
-    border-radius: 5px;
-    background-color: blue;
-}
-
-h4:hover{
-    color: magenta;
-}
-
-section>span:hover+p{ /*or section>span:hover~p*/
+/* or  */
+/* div.block1{
     color: salmon;
+} */
+
+
+/* now other 4 type on multiple values of class */
+
+/* 3. attribute selector with prefix value */
+div[class^="one"]{
+    color: greenyellow;
 }
 
-/* 8. :focus ( to change the proprty when we tap on any input field in the form) */
-input:focus{
-    outline: none;
-    background-color:greenyellow;
+/* 4. attribute selector with suffix value  */
+div[class$="3"]{
+    color: brown;
+}
+
+/* 5. attribute selector with in between value  */
+div[class~="ii"]{
+    color: rgb(234, 255, 0);
+}
+
+/* 6. attribute selector with again in between value  */
+/* this selector is very powerfull , 'i' written on 1st place inside class value of div tag inside html but it able to target that while it is created for target the middle value like ~. */
+div[class*="i"]{
+    color: green;
 }
