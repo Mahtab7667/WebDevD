@@ -10,7 +10,7 @@ p::first-line{
 }
 
 /* 3. ::selection--> */
-section::selection{
+div::selection{
     background-color: green;
 }
 /* or  */
@@ -32,14 +32,25 @@ ul>:nth-child(odd)::marker{
     content:'😒';
 }
 
-/* 5. ::before  */
+/* 5. ::before (work on span(inline element also)) */
 section::before{
     content: 'Hello ';
     color: orange;
 }
 
-/* 6. ::after  */
+/* 6. ::after (work on span(inline element also))  */
 section::after{
     content: ' ,How are you?';
     color: rgb(0, 255, 17);
 }
+
+/* checking selection selector is only work on block level or it also works on inline element */
+span::selection{
+    background-color:green;
+}
+
+/* checking marker selector on inline element  */
+span::marker{
+    content:'👍';
+}
+

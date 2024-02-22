@@ -1,0 +1,32 @@
+/* 1. by name (simple/light/dark/deep) */
+div{
+    /* color: red; */
+    /* color: lightblue; */
+    /* color: darkred; */
+    color: deepskyblue;
+}
+
+/* 2. by hexadecimal */
+p{
+    /* color: #00ff00; */
+     /* alpha introduce */
+     color: #00ff00ff;
+
+    /* color: #0f0; */
+    /* alpha introduce */
+     color: #0f0f;
+}
+
+/* 3. by rgb  */
+section{
+    /* color: rgb(0,0,255); */
+     /* alpha introduce */
+    color: rgba(0,0,255,0.7);
+}
+
+/* 4. by hsl */
+main{
+    /* color: hsl(240, 100%, 50%); */
+     /* alpha introduce */
+     color:hsla(0, 100%, 50%, 0.5)
+}

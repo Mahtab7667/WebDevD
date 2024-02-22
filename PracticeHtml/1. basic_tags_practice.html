@@ -49,54 +49,62 @@
     <!--1.Header tag-->
     <article>
 		<header>
-			<h2>Computer</h2>
+			<h2>Computer (header tag)</h2>
 			<p>cpu</p>
 		</header>
 	<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eaque, officia.</p>
 	</article>
+	<br><br>
 
 	<!--2. Nav tag-->
+	<h3>navigation link/bar</h3>
 	<div style="border: 1px solid green;width: 250px;">
-    Nav bar:<a href="#">Home |</a><a href="#">Services |</a><a href="#">About us</a>
+    Nav bar :<a href="#">Home |</a><a href="#">Services |</a><a href="#">About us</a>
     </div>
-	<br>
+	<br><br>
+
 
 	<!--3. section-->
+	<h2>Section starts here</h2>
+
 	 <!--first section-->
+	 <h3>1st section</h3>
 	<section style="border: 1px solid green;">
 		<h1>html</h1>
+
 	<article>
 		<header>
 		<h1>tags</h1>
 	    </header>
 	<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Labore, repudiandae?</p>
     </article>
+	<br>
 
 	<article>
-		<header>
 		<h1>lists</h1>
-	    </header>
-	</article>
-	<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Labore, repudiandae?</p>
+	<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Labore, repudiandae?
+	</p>
+    </article>
+
 	</section>
-	<br>
- 
-	<!--second section-->
-	<section style="border: 1px solid rgb(13, 0, 255);">
-		<h1>About us/services/introduction</h1>
-		<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laborum cumque blanditiis tenetur, hic quod velit?</p>
-	</section>
-	<br>
+	<br><br>
+
+<h2>section end here</h2>
+<br><br>
 
 	<!--4. Article-->
+	<h2>Article</h2>
+
 	<article style="border: 1px solid green;">
 	<img src="Pictures1/flpcrt_image3.png">
 	<h1>Camera</h1>
 	<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Labore, repudiandae?</p>
 	</article>
-	<br>
+	<br><br>
 
 	<!--5. Aside-->
+	<h2>Aside</h2>
+
 	<article style="border: 1px solid green; width:65%;float: left;padding: 10px;">
 		<img src="Pictures1/flpcrt_image3.png">
 		<h1>Camera</h1>
@@ -112,52 +120,70 @@
 	<!--6. Footer-->
 	<!--header-->
 	<!--content/main-->
+	<h2>Footer</h2>
 	<footer>
 		<a href="#">go on top</a>
 		<p>writer <em>mahtab</em><br>Copyrights reserved</p>
 	</footer>
+	<br><br>
 
 
 <!--13. span-->
+<h2>span tag</h2>
 <p>Lorem ipsum dolor sit amet<span style="color: green;"> mahtab</span> consectetur adipisicing elit. Voluptatibus, vero!</p>
+<br><br>
 
 <!--14. audio-->
+<h2>audio</h2>
 <audio controls autoplay muted loop preload="none" >
 	<source src="music/song1.m4a" type="audio/mp3">
 </audio>
+<br><br>
 
 <!--15. video-->
+<h2>video</h2>
 <video controls autoplay loop muted preload="none" width="350px" height="300px" poster="Pictures1/pic2.jpg">
 	<source src="music/song1.m4a" type="video/mp4">
 </video>
+<br><br>
 
 	
 
-
 <hr>
+
+<!--1.-->
 <!--Datalist Tag-->
-<input list="city">
-<datalist id="city">
-	<option value="noida">
-	<option value="New Delhi">
-	<option value="Delhi">
+<h2>Datalist</h2>
+<label for="datalist">Choose your Yop :</label>
+<input list="yop" id="datalist">
+<datalist id="yop">
+	<option value="2024"></option>
+	<option value="2023"></option>
+	<option value="2022"></option>
 </datalist>
+<br><br>
 
-<br>
 
-<!--Anchor Tag-->
-<a href="ImageTag_practice.html" target="_blank">Go to next page</a> <br><br>
-
+<!--2.-->
 <!--Label-->
+<h2>Label tag</h2>
+
 Age :
+<!-- one way of lebelling -->
 <input type="radio" name="age" id="over18"> 
 <label for ="over18"> Over 18 </label>
 
-<input type="radio" name="age" id="under18"> 
-<label for ="under18"> under 18
+<!-- 2nd way of labelling -->
+<label >
+	<input type="radio" name="age">under 18
+</label> 
 <br><br>
 
+
+<!-- 3.-->
 <!--Select+optgroup-->
+<h2>Select</h2>
+
 <select name="fruits" multiple>
 
 <optgroup label="Apples" disabled>
@@ -175,12 +201,20 @@ Age :
 </select>
 <br><br>
 
+<h2>another select</h2>
+<label for="one">Dropdown List of fruits :</label>
+<select name="fruits" id="one">
+		<option value="apple">Apple</option>
+		<option value="" selected disabled>--choose your favorite fruite</option>
+	    <option value="bananna">Banana</option>
+</select>
+<br><br>
+
+<!-- 4. -->
 <!--Button-->
+<h2>Button</h2>
 <form>
 <fieldset>
-
-<input type="text" name="fname"> <br><br>
-
 <button type="button" name="useless" onclick="alert('you have clicked on submit button')">Click me</button>
 <button type="submit" name="submit" disabled>Submit</button>
 <button type="reset" name="reset" accesskey="r">Reset</button>
@@ -188,7 +222,9 @@ Age :
 </fieldset>
 </form>
 
+<!-- 5. -->
+<h2>TextArea</h2>
+<textarea rows="10" cols="30"></textarea>
 
-    
 </body>
 </html>
