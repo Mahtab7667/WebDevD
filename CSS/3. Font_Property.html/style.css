@@ -1,0 +1,60 @@
+body{
+background-color:black;
+}
+
+/* 2(b). css way via external css */
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
+
+main{
+    font-family:'dancing script';
+    font-size: 45px;
+    background-color:orange;
+} 
+
+
+/* 1. html way to add outside fonts via link)  */
+div{
+    font-family:'dancing script';
+    font-size: 40px;
+    background-color: green;
+}
+
+
+/* 3. by download  */
+@font-face {
+    font-family:pappu;
+    src: url(Dancing_Script/DancingScript-VariableFont_wght.ttf);
+}
+
+article{
+    font-family:'pappu';
+    font-size: 45px;
+    background-color:rgb(254, 253, 254);
+}
+
+
+
+
+
+/* first 5 type of font property  */
+p{
+    /* 1. font-size (16px by default) */
+    font-size: 30px;
+
+    /* 2. font-weight (300 light,400normal,700bold) */
+    font-weight: 700;
+
+    /* 3. font-style (normal,italic,oblique,oblique value_degree(60 degree)) */
+    font-style: italic;
+
+    /* 4. font-variant (normal,small-caps) */
+    font-variant:small-caps;
+
+    /* 5. font-family */
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+
+
