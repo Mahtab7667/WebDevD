@@ -1,0 +1,58 @@
+body{
+    display: grid;
+    place-items:center;
+    height: 100vh;
+}
+
+div{
+background-color: coral;
+width: 600px;
+height: 400px;
+}
+
+div>article{ 
+    /* 1. text-align(left,right,start,end,center,justify) */
+    text-align:center;
+
+    /* 2. text-transform(normal,uppercase,lowercase,capitalize) */
+    text-transform: capitalize;
+
+    /* 3(a). text-decoration(none,underline,overline,line-through) */
+    /* text-decoration:line-through; */
+
+    /* 3(b). advance text-decoration(text-decoration thickness/style/line/color) */
+    text-decoration: 2px wavy underline hsl(126, 100%, 50%);
+}
+
+div>p{ 
+    font-size: 25px;
+    text-decoration:underline;
+
+    /* 4. text-underline-offset(20px,-20px) */
+    /* text-underline-offset:-30px; */
+
+    /* 5. text-underline-position:(auto,under) */
+    text-underline-position:under;
+
+    /* 6. line-height: */
+    line-height:50px;
+
+    /* 7. letter-spacing: */
+    letter-spacing:5px;
+
+    /* 8. word-spacing: */
+    word-spacing:15px;
+}
+
+div>main{
+    font-size:30px;
+    /* 9. text-shadow: */
+    text-shadow:100px 0px 2px magenta;
+}
+
+div>section{
+    font-size: 50px;
+    /* 10. text-stroke  */
+    color:transparent;
+    -webkit-text-stroke:1px white;
+}
