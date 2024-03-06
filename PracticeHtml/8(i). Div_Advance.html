@@ -1,0 +1,228 @@
+<!-- agr do child div hai tabhi ham float use krenge, jyada ho to float se v ho skta hai pr isko use nahi krenge  -->
+<!-- agr koi width ke base pr divide hai to uska ek parent hoga, example agr koi div hai and usko do bhaag me divide kiya gya hai to yahan pr tin div ho gye total. -->
+
+<!-- 1. agr div ko do hi hisso me baatna hai to,
+div ke ek child ko float:left and doosre ko float:right dena hoga.
+
+2. agr do se jyada section me divide krna hai to,
+div ke sabhi child ko ya to float:left ya fr float:right de denge is se wo ek ke upar doosre aajayega.-->
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Advance Div</title>
+    <style>
+        #outer{
+            height: 200px;
+            width: 1000px;
+            background-color: orange;
+        }
+        #child1{
+            height: 200px;
+            width: 200px;
+           background-color: aqua;
+           float: left;
+        }
+        #child2{
+            height: 200px;
+            width: 200px;
+            background-color:red;
+            float: left;
+        }
+        #child3{
+            height: 200px;
+            width: 200px;
+            background-color: green;
+            float: left;
+        }
+        #child4{
+            height: 200px;
+            width: 200px;
+            background-color:blue;
+            float: left;
+        }
+        #child5{
+            height: 200px;
+            width: 200px;
+            background-color:magenta;
+            float: left;
+        }
+    </style>
+</head>
+<body>
+
+   <div id="outer">
+    <div id="child1"></div>
+    <div id="child2"></div>
+    <div id="child3"></div>
+    <div id="child4"></div>
+    <div id="child5"></div>
+   </div>
+
+</body>
+</html> -->
+
+
+
+<!-- question-1. how many div used in this picture -->
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question to indetify no of div</title>
+    <style>
+        #outer{
+            height: 400px;
+            width: 800px;
+            background-color: red;
+        }
+        #child1{
+            height:400px;
+            width:400px;
+            float: left;
+            background-color: aqua;
+        }
+        #child2{
+            height:400px;
+            width:400px;
+            background-color:green;
+            float: right;
+        }
+        #child2-child1{
+            height: 200px;
+            width: 400px;
+            background-color: greenyellow;
+        }
+        #child2-child2{
+            height: 200px;
+            width: 400px;
+            background-color: rgb(181, 230, 112);
+         } 
+    </style>
+</head>
+<body>
+    <div id="outer">
+        <div id="child1"></div>
+        <div id="child2">
+            <div id="child2-child1"></div>
+            <div id="child2-child2"></div>
+        </div>
+    </div>
+</body>
+</html> -->
+
+
+
+<!-- question-2. Question on doing partition -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Question on doing partition</title>
+    <style>
+        #outer{
+            height: 400px;
+            width: 800px;
+            background-color: red;
+        }
+        #child1{
+            height: 200px;
+            width: 800px;
+            background-color:green;
+        }
+        #child2{
+            height: 200px;
+            width: 800px;
+            background-color:magenta;
+        }
+        #child1-child1{
+            height: 200px;
+            width: 400px;
+            background-color: rgb(11, 139, 11);
+            float: left;
+        }
+        #child1-child2{
+            height: 200px;
+            width: 400px;
+            background-color: greenyellow;
+            float: right;
+        }
+        #child2-child1{
+            height: 200px;
+            width: 400px;
+            background-color: blue;
+            float: left;
+        }
+        #child2-child2{
+            height: 200px;
+            width: 400px;
+            background-color:aqua;
+            float: right;
+        }
+        #child1-child2-child1{
+            height:100px;
+            width:400pxpx;
+            background-color:purple;
+        }
+        #child1-child2-child2{
+            height: 100px;
+            width: 400px;
+            background-color: teal;
+        }
+        #child1-child2-child1-child1{
+            height:100px;
+            width: 200px;
+            background-color: blueviolet;
+            float: left;
+        }
+        #child1-child2-child1-child2{
+            height:100px;
+            width: 200px;
+            background-color: red;
+            float: right;
+        }
+        #child2-child1-child1{
+            height: 100px;
+            width: 400px;
+            background-color: brown;
+        }
+        #child2-child1-child2{
+            height: 100px;
+            width: 400px;
+            background-color:yellow;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="outer">
+        <!-- child-1  -->
+        <div id="child1">
+            <div id="child1-child1"></div>
+            <!-- child1-child2  -->
+            <div id="child1-child2">
+                <!-- child1-child2-child1  -->
+                <div id="child1-child2-child1"> 
+                    <div id="child1-child2-child1-child1"></div>
+                    <div id="child1-child2-child1-child2"></div>
+                </div>
+                <!-- child1-child2-child2  -->
+                <div id="child1-child2-child2"></div>
+            </div>
+        </div>
+
+        <!-- child-2  -->
+        <div id="child2">
+            <!-- child2-child1  -->
+            <div id="child2-child1">
+                <div id="child2-child1-child1"></div>
+                <div id="child2-child1-child2"></div>
+            </div>
+            <!-- child2-chil2  -->
+            <div id="child2-child2"></div>
+        </div>
+    </div>
+
+</body>
+</html>
+<br><br><br>
+

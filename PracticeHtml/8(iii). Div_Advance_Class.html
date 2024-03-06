@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Div using class</title>
+    <style>
+        #outer{
+            height: 500px;
+            width: 500px;
+            background-color: red;
+        }
+        .child1-child3{
+            height:100px;
+            width: 500px;
+            background-color: green;
+        }
+        #child2{
+            height: 300px;
+            width: 500px;
+            background-color: grey;
+        }
+        .child2-child1-child3{
+            height: 300px;
+            width: 200px;
+            background-color: skyblue;
+            float: left;
+        }
+        #child2-child2{
+            height: 300px;
+            width: 100px;
+            background-color: red;
+            float: left;
+        }
+        .child2-child2-child1-child3{
+            height: 100px;
+            width: 100px;
+            background-color: red;
+        }
+        #child2-child2-child2{
+            height: 100px;
+            width: 100px;
+            background-color: white;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="outer">
+        <div class="child1-child3"></div>
+
+        <div id="child2">
+            <div class="child2-child1-child3"></div>
+
+            <div id="child2-child2">
+                <div class="child2-child2-child1-child3"></div>
+                <div id="child2-child2-child2"></div>
+                <div class="child2-child2-child1-child3"></div>
+            </div>
+            
+            <div class="child2-child1-child3"></div>
+        </div>
+
+        <div class="child1-child3"></div>
+    </div>
+    
+</body>
+</html>
