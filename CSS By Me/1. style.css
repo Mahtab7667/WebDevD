@@ -1,0 +1,15 @@
+.one{
+    height: 200px;
+    width: 300px;
+    border: 2px solid  green;
+    /* display: inline; */
+    /* display: inline-block; */
+}
+
+#two{
+    /* none empty its space after hiding */
+    /* display: none;  */
+
+    /* visibility doesn't empty its space after hiding */
+    visibility: hidden;
+}

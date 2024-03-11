@@ -1,0 +1,24 @@
+#one{
+    height: 250px;
+    width: 300px;
+    border: 2px solid;
+    background-color: yellow;
+
+    /* 1. overflow:visible; be default */
+    /* overflow: visible; */
+
+    /* 2. overflow: hidden; it cuts the content that lead lost of content  */
+    /* overflow: hidden; */
+
+    /* 3. overflow: scroll; it bring scroll baar to read whole content  */
+    /* overflow: scroll; */
+
+    /* 4. overflow-x:visible/hidden; to hide or show horizontal scroll baar */
+    /* overflow-x: visible; */
+
+    /* 5. overflow-y: visible/hide; to show or hide vertical scroll baar  */
+    /* overflow-y:hidden; */
+
+    /* 6. overflow: auto; to set sroll baar automatically based on needs */
+    overflow: auto;
+}

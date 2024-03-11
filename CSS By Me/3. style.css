@@ -1,0 +1,98 @@
+body{
+    height: 1000px;
+}
+
+#parent{
+    width: 500px;
+    height: 100px;
+    border: 2px solid;
+    margin: 60px;
+    padding: 30px;
+
+    /* making parent as a positioned element parent by writing positioned as relative/absolute/fixed so that child div can use its parent base otherwise child div after applying postion:absolute; will be take its base from body.  */
+    position: relative;
+
+}
+
+#child1{
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    display: inline-block;
+
+    /* 1. by default position: static; */
+
+    /* 2. position: relative; take base from its previous place  */
+    /* this do not leave its place empty after rearranging */
+    position: relative;
+    bottom: 50px;
+}
+#child2{
+    width: 100px;
+    height: 100px;
+    background-color: green;
+    display: inline-block;
+
+    /* 3. position: absolute; take the base from itss postioned element parent  */
+    /* this leave its place empty after rearranging */
+    position: absolute;
+    top:50px ;
+    right: 0px;
+}
+#child3{
+    width: 100px;
+    height: 100px;
+    background-color:blue;
+    display: inline-block;
+    
+    /* 4. position: fixed; to fix this div in browser screen and it take body as base and not scrolled with other content  */
+    /* this leave its place empty after rearranging */
+    position: fixed;
+    bottom:5px;
+    right: 20px;
+}
+
+
+
+/* z-index */
+/* to apply z-index element must be positioned element */
+#par{
+    width: 500px;
+    height: 100px;
+    /* border: 2px solid; */
+    margin: 60px;
+    padding: 30px;
+}
+#c1{
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    display: inline-block;
+
+    position: relative;
+    z-index: 2;
+
+
+}
+#c2{
+    width: 100px;
+    height: 100px;
+    background-color:green;
+    display: inline-block;
+
+    position: relative;
+    top:50px;
+    left: -50px;
+    z-index: 3;
+}
+#c3{
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+    display: inline-block;
+
+    position: relative;
+    top: 100px;
+    left:-100px;
+    z-index: 1;
+}
