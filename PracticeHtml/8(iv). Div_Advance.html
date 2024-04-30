@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <title>div part four</title>
+      <style>
+        *{
+                 box-sizing: border-box;
+        }
+
+        body{
+            display: flex;
+            height: 100vh;
+            justify-content: center;
+            align-items: center;
+        }
+        #outer{
+            width: 800px;
+            height: 400px;
+            /* border: 2px solid green; */
+            display: flex;
+        }
+        #child1{
+            background-color: lightblue;
+            width: 100px;
+            height: 400px;
+            /* border: 1px solid black; */
+        }
+        #child2{
+            width: 700px;
+            height: 400px;
+            /* border: 1px solid black; */
+            display: flex;
+            flex-direction: column;
+        }
+        
+        #child2-child1{
+            background-color: blue;
+            width: 700px;
+            height: 100px;
+            /* border: 1px solid red; */
+        }
+        #child2-child2{
+            width: 700px;
+            height: 300px;
+            /* border: 1px solid blue; */
+            display: flex;
+        }
+        #child2-child2-child1{
+            background-color: yellowgreen;
+            width: 100px;
+            height: 300px;
+            /* border: 1px solid blue */
+        }
+        #child2-child2-child2{
+            width: 600px;
+            height: 300px;
+            /* border: 1px solid red; */
+        }
+        #child2-child2-child2-child1{
+            background-color: yellow;
+            width: 600px;
+            height: 100px;
+            /* border: 1px solid black; */
+        }
+        #child2-child2-child2-child2{
+            width: 600px;
+            height: 200px;
+            /* border: 1px solid black; */
+            display: flex;
+        }
+        #child2-child2-child2-child2-child1{
+            background-color: orange;
+            width: 300px;
+            height: 200px;
+            /* border: 1px solid black; */
+        }
+        #child2-child2-child2-child2-child2{
+            width: 300px;
+            height: 200px;
+            /* border: 1px solid black; */
+        }
+        #child2-child2-child2-child2-child2-child1{
+            background-color:red;
+            width: 300px;
+            height: 100px;
+            /* border: 1px solid green; */
+        }
+        #child2-child2-child2-child2-child2-child2{
+            background-color: magenta;
+            width: 300px;
+            height: 100px;
+            /* border: 1px solid rgb(41, 0, 128); */
+        }
+
+        </style>
+</head>
+<body>
+    
+
+    <div id="outer">
+        <div id="child1"></div>
+        <div id="child2">
+            <div id="child2-child1"></div>
+            <div id="child2-child2">
+                <div id="child2-child2-child1"></div>
+                <div id="child2-child2-child2">
+                    <div id="child2-child2-child2-child1"></div>
+                    <div id="child2-child2-child2-child2">
+                        <div id="child2-child2-child2-child2-child1"></div>
+                        <div id="child2-child2-child2-child2-child2">
+                            <div id="child2-child2-child2-child2-child2-child1"></div>
+                            <div id="child2-child2-child2-child2-child2-child2"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+</html>
