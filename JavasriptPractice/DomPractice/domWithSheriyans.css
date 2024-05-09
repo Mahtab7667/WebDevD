@@ -1,0 +1,28 @@
+/* h1{
+    color: magenta;
+} */
+
+ /* making a bulb */
+ *{
+    box-sizing: border-box;
+    margin: 0px;
+    padding:0px;
+ }
+
+ body{
+    height: 100vh;
+ }
+
+ #bulb{
+    width: 200px;
+    height: 200px;
+    border: 1px solid grey;
+    border-radius: 50%;
+    margin:10px;
+ }
+ button{
+    display: block;
+    padding: 15px;
+    margin-left: 75px ;
+ }
+ 
