@@ -1,0 +1,30 @@
+html{
+    font-size: 10px;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#box{
+    width:13rem;
+    height: 7rem;
+    /* border: 2px solid black; */
+    border-radius: 5px;
+    background-color:#ff0000;
+    color: white;
+
+    /* style for number inside div */
+    font-size: 6rem;
+    text-align: center;
+}

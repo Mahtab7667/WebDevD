@@ -1,0 +1,91 @@
+html{
+    font-size: 10px;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+}
+
+/* design of section(outer area)start */
+.outer{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    gap: px;
+}
+/* design of section(outer area)end */
+
+
+/*1. design of left side of section start */
+.left{
+    width: 50%;
+    height: 100%;
+    /* background-color: blue; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form{
+    width: 40rem;
+    height: 40rem;
+    /* border: 0.2rem solid black; */
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    gap: 1.5rem;
+    font-size: 1.8rem;
+    letter-spacing: 0.2rem;
+    box-shadow: 1px 1px 0px 0px;
+}
+
+input{
+    width: 100%;
+    height: 4rem;
+    border-radius: 0.4rem;
+    outline: none;
+    font-size: 1.7rem;
+}
+
+button{
+    height:5rem;
+    font-size: 1.8rem;
+    background: #0866ff;
+    border-radius: 0.6rem;
+    cursor: pointer;
+}
+
+#reset{
+    background-color:#42b72a;
+}
+/* design of left side of section end */
+
+
+
+/* 2. design of right side of section start */
+.right{
+    width: 50%;
+    height: 100%;
+    /* background-color:mediumseagreen; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+table,th,tr,td{
+    width: 40rem;
+    height: 6rem;
+    background-color: white;
+    border: 2px solid black;
+    border-collapse: collapse;
+    font-size: 1.7rem;
+}
+/* 2. design of right side of section end */

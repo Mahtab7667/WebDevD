@@ -1,0 +1,27 @@
+html{
+    font-size: 10px;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#box{
+    width: 60rem;
+    height: 40rem;
+    border: 2px solid black;
+
+    font-size: 3rem;
+    padding: 50px;
+}
+

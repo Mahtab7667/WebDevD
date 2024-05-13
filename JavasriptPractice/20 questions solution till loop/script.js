@@ -300,10 +300,10 @@
 //        totalCols=row+(row-1);
 //        for(let numpattern=1;numpattern<=totalCols;numpattern++){
 //         if(numpattern%2===0){
-//             result+=2;
+//             result+='2';
 //         }
 //         else{
-//             result+=1;
+//             result+='1';
 //         }
 //        }
 //        console.log(result);
